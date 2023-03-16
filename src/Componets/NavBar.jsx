@@ -1,6 +1,6 @@
 import React from 'react'
 import '../CSS_files/Navbar.css'
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import logo from '../Images/logo.png'
 const NavBar = () => {
   return (
@@ -10,26 +10,26 @@ const NavBar = () => {
           <img src={logo} alt="" />
         </div>
         <ul>
-          <Link to={'/home'}>
+          <NavLink to={'/home'}>
             <li>Home</li>
-          </Link>
-            <Link to={'/about'}>
+          </NavLink>
+            <NavLink to={'/about'}>
             <li>About</li>
-            </Link>
-            <Link to={'/project'}>
+            </NavLink>
+            <NavLink to={'/project'}>
             <li>Project</li>
-            </Link>
-            <Link to={'/'}>
+            </NavLink>
+            <NavLink to={'/'}>
             <li>Servies</li>
-            </Link>
-            <Link to={'/'}>
+            </NavLink>
+            <NavLink to={'/'}>
             <li>Blog</li>
-            </Link>
-            <Link to={'/contact'}>
+            </NavLink>
+            <NavLink to={'/contact'}>
             <li>Contact</li>
-            </Link>
+            </NavLink>
         </ul>
-        <button> Click here </button>
+        <button>Enquire Now</button>
     </div>
     </>
   )

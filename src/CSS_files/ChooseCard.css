@@ -1,5 +1,5 @@
 .ChooseCard{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 400px;
     display: flex;
     flex-direction: column;

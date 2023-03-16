@@ -6,7 +6,10 @@ import p2 from '../../Images/p2.png'
 import p3 from '../../Images/p3.png'
 import p4 from '../../Images/p4.png'
 import ChooseCard from './ChooseCard'
+import ProjectCard from './ProjectCard'
 import WhatWeDoCard from './WhatWeDoCard'
+import { imgs1, imgs2, imgs3, imgs4, imgs5, imgs6,imgs7,imgs8 } from '../../Images/ProjectImages'
+
 const Home = () => {
   return (
     <>
@@ -63,17 +66,39 @@ const Home = () => {
             h3={'Air conditioning services'}
             p={'We comply with the highest standards of professionalism and have one of the lowest employee turnover rates in the industry. Our urban science experts who are reliable and on time have a combined experience of over 18+ years. Financially, we offer the best rates in the industry with no hidden fees or expensive contracts. If you want to save money and find an inexpensive company for your facility management needs Urban Science is the place for you!'}
             />
-            {/* <WhatWeDoCard/> */}
-            {/* <WhatWeDoCard/> */}
-           
-            
-
+            <WhatWeDoCard img1={p4}
+            h3={'Air conditioning services'}
+            p={'We comply with the highest standards of professionalism and have one of the lowest employee turnover rates in the industry. Our urban science experts who are reliable and on time have a combined experience of over 18+ years. Financially, we offer the best rates in the industry with no hidden fees or expensive contracts. If you want to save money and find an inexpensive company for your facility management needs Urban Science is the place for you!'}
+            />
+            <WhatWeDoCard img1={p4}
+            h3={'Air conditioning services'}
+            p={'We comply with the highest standards of professionalism and have one of the lowest employee turnover rates in the industry. Our urban science experts who are reliable and on time have a combined experience of over 18+ years. Financially, we offer the best rates in the industry with no hidden fees or expensive contracts. If you want to save money and find an inexpensive company for your facility management needs Urban Science is the place for you!'}
+            />
           </div>
         </div>
-        <div className="Project-div"></div>
-        <div className="Our_teamDiv"></div>
-        <div className="Client-SatisfactionDiv"></div>
-        <div className="Office-PlaceDiv"></div>
+        <div className="Project-div">
+          <h1>Project</h1>
+          <div className="project-Card">
+            <ProjectCard imges={imgs1} head={'Mall Of Emirates'}/>
+            <ProjectCard imges={imgs2} head={'Atlantis–The Palm'}/>
+            <ProjectCard imges={imgs3} head={'Dubai-Mall'}/>
+            <ProjectCard imges={imgs4} head={'Emax'}/>
+            <ProjectCard imges={imgs5} head={'Medinat'}/>
+            <ProjectCard imges={imgs6} head={'Carrefour'}/>
+          </div>
+          <button>Find Out more</button>
+        </div>
+        
+        <div className="Office-PlaceDiv">
+          <div className="div1 child">
+            <img src={imgs7} alt="" />
+            <h2>Dubai</h2>
+          </div>
+          <div className="div2 child">
+            <img src={imgs8} alt="" />
+            <h2>UK</h2>
+          </div>
+        </div>
       </div>
     </>
   )
